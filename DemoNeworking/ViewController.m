@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSURLRequest * req = [[NetworkManager sharedManager]GetLoginRequest:@""];//:@"" password:@""];
+    [[NetworkManager sharedManager] ExecuteNetworkRequest:req completionHandler:^(NSData * _Nonnull data, NSURLResponse * _Nonnull response, NSError * _Nonnull error) {
+        if (error) {
+            
+        }
+        else
+        {
+            NSLog(@"%@  VIEW: ",response);
+            
+        }
+    }];
 }
 
 
