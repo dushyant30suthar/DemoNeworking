@@ -51,7 +51,7 @@ static NetworkManager *sharedManager = nil;
             NSLog(@"Error: %@", error);
         } else {
             NSLog(@"%@ %@", response, responseObject);
-            Handler(response,responseObject,error);
+            Handler(responseObject,response,error);
         }
     }];
     [dataTask resume];
@@ -59,8 +59,5 @@ static NetworkManager *sharedManager = nil;
 -(void)GetData
 {
   
-
-    
-    
 }
 @end

@@ -25,7 +25,7 @@
         }
         else
         {
-            NSLog(@"%@  VIEW: ",response);
+            NSLog(@"%@  VIEW: ",data);
             
         }
     }];
